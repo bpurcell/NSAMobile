@@ -1,0 +1,67 @@
+
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <title>NSA</title> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="addistional.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="js/touchy.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script>
+    var handleTouchyPinch = function (e, $target, data) {
+        $target.css({'webkitTransform':'scale(' + data.scale + ',' + data.scale + ')'});
+    };
+    $('.img1').bind('touchy-pinch', handleTouchyPinch);
+    </script>
+    
+    <style>
+        .slide {
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            position:relative;
+            background: #eee;
+            border: solid 1px #ccc;
+            }
+            .imagewrap img {
+
+                height: 300px;
+                width: 300px;
+            }
+    </style>
+    
+</head> 
+
+    
+<body> 
+
+<div data-role="page" id="detail1">
+    <div data-role="header">
+    	<a href="index.html" data-icon="home">Home</a>
+        <h1>Nails and Nailing</h1>
+    </div><!-- /header -->
+    <div data-role="content">    
+        <h2>Nails and Nailing</h2>
+
+        <h3>Basic Practice</h3>
+        <p>Nailing: Set the nail in the countersink in the top surface of the slate.  Do not over-nail or under-nail.  Slate shingles must hang on their nails.</p>
+        <p>Nails: 11-gauge, smooth shank, copper wire slating nails are used most frequently.</p>
+        <p>Number of Nails: Use 2 nails per slate.</p>
+        <p>Nail Length:  Generally twice the thickness of the slate plus 1”.</p>
+
+        <h3>Special Considerations</h3>
+        <p>Gypsum and Concrete Roof Decks:  Use smooth shank nails, not ring shank.  Stainless steel nails may be needed to avoid bending.</p>
+        <p>Gauge: Use 10-gauge nails for larger slates, hardwood roof decks, and where longer nails are required (e.g., hips).</p>
+        <p>4 Nails: Use 4 nails per slate for slates measuring ≥ 3/4” in thickness and ≥ 20” in length.  Place the 2 additional nails 2” above the regular nail holes.</p>
+        <p>Flashings: Do not nail slates through flashings.  Move the slating nails up, place one nail above the other on one side of the slate, or use copper wires secured to the roof deck upslope of the flashing.</p>
+    </div><!-- /content -->
+</div>
+
+
+</body>
+</html>
