@@ -13,6 +13,8 @@
     <script src="js/jquery.jgestures.js"></script>
     <script src="js/jquery.touchpanview.js"></script>
     <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="js/jquery.subpage.js"></script>
+    
     <script>
     jQuery(document).live('pageinit',function(event){
         
@@ -24,7 +26,11 @@
         $(".image_wrap .slider").change(function() {
             
             sVal = $(this).val();
-            $('.zoom').attr('src','img/1/'+sVal+'.gif')
+            folder = $(this).data('folder');
+            
+            console.log(folder);
+            
+            $('.zoom').attr('src','img/'+folder+'/'+sVal+'.gif')
         });
         
         
@@ -41,7 +47,7 @@
         <h2>Welcome</h2>
         <p>This is the sample of how a mobile site would work for NSA </p>    
         <h3>Details:</h3>
-        <p><a href="#page1" data-role="button">1 - Nails and Nailing</a></p>
+        <p><a href="nails.html" data-role="button">1 - Nails and Nailing</a></p>
         <p><a href="#page2" data-role="button">2 - Headlap and Exposure</a></p>
         <p><a href="#page3" data-role="button">3 - Offset</a></p>
         <p><a href="#page4" data-role="button">4 - Slate Repair Nail and Bib</a></p>
@@ -80,10 +86,6 @@
 
     </div><!-- /content -->
 
-    
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" value="1" min="1" max="14"  data-theme="b"  />
-    </div><!-- /footer -->
 </div>
 
 <div data-role="page" id="image1" class="image_wrap">
@@ -100,7 +102,7 @@
     </div><!-- /content -->
     
     <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="14"  data-theme="b"  />
+        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="14"  data-theme="b" data-folder="2"  />
     </div><!-- /footer -->
 </div>
 
@@ -122,16 +124,11 @@
         <p>This is an introduction paragraph</p>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="details1.html">Details</a></li>
-            <li><a href="#image1">Image Zoom</a></li>
+            <li><a href="details1.html#details2">Details</a></li>
+            <li><a href="#image2">Image Zoom</a></li>
         </ul>
 
     </div><!-- /content -->
-
-    
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" value="1" min="1" max="14"  data-theme="b"  />
-    </div><!-- /footer -->
 </div>
 
 <div data-role="page" id="image2" class="image_wrap">
@@ -148,8 +145,9 @@
     </div><!-- /content -->
     
     <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="14"  data-theme="b"  />
+        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5"  data-theme="b" data-folder="3a"  />
     </div><!-- /footer -->
+
 </div>
 
 </body>
