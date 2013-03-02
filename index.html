@@ -6,68 +6,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
     <title>NSA</title> 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+
+    <link rel="stylesheet" href="nsa1.3.css" />
     <link rel="stylesheet" href="jquery.touchpanview.css" />
+    <link rel="stylesheet" href="additional.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="js/jquery.easing.js"></script>
     <script src="js/jquery.jgestures.js"></script>
     <script src="js/jquery.touchpanview.js"></script>
-    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-    <script src="js/jquery.subpage.js"></script>
+    <!-- <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     
-    <script>
-    jQuery(document).live('pageinit',function(event){
-        
-        $('.image_wrap .zoom').touchPanView({
-            width:  300,
-            height: 300,
-            startZoomedOut: true,
-        });
-        $(".image_wrap .slider").change(function() {
-            
-            sVal = $(this).val();
-            folder = $(this).data('folder');
-            
-            console.log(folder);
-            
-            $('.zoom').attr('src','img/'+folder+'/'+sVal+'.gif')
-        });
-        
-        
-    });
-    </script>
+    <script src="mobileapp.js"></script>
 </head> 
 <body> 
+    <div data-role="page" id="test" data-fullscreen="true">
 
-<!-- Start of first page: #one -->
-<div data-role="page" id="one">
-    <div data-role="content" >   
-
-        <img border="0" src="img/header.png" alt="Logo, Facebook" style="display:inline"/> 
-        <h2>Welcome</h2>
-        <p>This is the sample of how a mobile site would work for NSA </p>    
-        <h3>Details:</h3>
-        <p><a href="nails.html" data-role="button">1 - Nails and Nailing</a></p>
-        <p><a href="#page2" data-role="button">2 - Headlap and Exposure</a></p>
-        <p><a href="#page3" data-role="button">3 - Offset</a></p>
-        <p><a href="#page4" data-role="button">4 - Slate Repair Nail and Bib</a></p>
-        <p><a href="#page5" data-role="button">5 - Slate Repair Slate Hook</a></p>
-        <p><a href="#page6" data-role="button">6 - Eave Edge</a></p>
-        <p><a href="#page7" data-role="button">7 - Headwall Flashing</a></p>
-        <p><a href="#page8" data-role="button">8 - Apron Corner</a></p>
-    </div><!-- /content -->
+        <div data-role="header">
+            <img border="0" src="img/header.png" alt="Logo, Facebook" style="display:inline"/> 
+        </div><!-- /header -->
     
-    <div data-role="footer">
-        <h4>Page Footer</h4>
-    </div><!-- /footer -->
-</div> 
+        <div data-role="content">     
+            <h2>Welcome</h2>
+            <p>This is the sample of how a mobile site would work for NSA </p>    
+            <h3>Details:</h3>
+            <a href="#page1" data-role="button">1 - Nails and Nailing</a>
+            <a href="#page2" data-role="button">2 - Headlap and Exposure</a>
+            <a href="#page3" data-role="button">3 - Offset</a>
+            <a href="#page4" data-role="button">4 - Slate Repair Nail and Bib</a>
+            <a href="#page5" data-role="button">5 - Slate Repair Slate Hook</a>
+            <a href="#page6" data-role="button">6 - Eave Edge</a>
+            <a href="#page7" data-role="button">7 - Headwall Flashing</a>
+            <a href="#page8" data-role="button">8 - Apron Corner</a>
+
+        </div><!-- /content -->
+
+    </div>
 
 <!--
 ||
 ||  Nails and Nailing
 ||
 -->
-<div data-role="page" id="page1">
+<div data-role="page" id="page1" data-fullscreen="true">
 
     <div data-role="header">
         <a href="index.html" data-icon="home">Home</a>
@@ -88,7 +70,7 @@
 
 </div>
 
-<div data-role="page" id="image1" class="image_wrap">
+<div data-role="page" id="image1" class="image_wrap" data-fullscreen="true">
 
     <div data-role="header">
         <a href="index.html" data-icon="home">Home</a>
@@ -101,8 +83,8 @@
 
     </div><!-- /content -->
     
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="14"  data-theme="b" data-folder="2"  />
+    <div data-role="footer" data-position="fixed">
+        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="14" data-folder="1"  />
     </div><!-- /footer -->
 </div>
 
@@ -111,7 +93,7 @@
 ||  Nails and Nailing
 ||
 -->
-<div data-role="page" id="page2">
+<div data-role="page" id="page2" data-fullscreen="true">
 
     <div data-role="header">
         <a href="index.html" data-icon="home">Home</a>
@@ -124,14 +106,14 @@
         <p>This is an introduction paragraph</p>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="details1.html#details2">Details</a></li>
+            <li><a href="details.html">Details</a></li>
             <li><a href="#image2">Image Zoom</a></li>
         </ul>
 
     </div><!-- /content -->
 </div>
 
-<div data-role="page" id="image2" class="image_wrap">
+<div data-role="page" id="image2" class="image_wrap" data-fullscreen="true">
 
     <div data-role="header">
         <a href="index.html" data-icon="home">Home</a>
@@ -144,8 +126,8 @@
 
     </div><!-- /content -->
     
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5"  data-theme="b" data-folder="3a"  />
+    <div data-role="footer" data-position="fixed">
+        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3a"  />
     </div><!-- /footer -->
 
 </div>
