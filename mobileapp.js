@@ -1,6 +1,6 @@
     $(document).live('pageinit',function(event){
         
-        var h = $(window).height();
+        var h = $(window).height()-90;
         var w = $(window).width();
         
         $('.image_wrap .zoom').touchPanView({
