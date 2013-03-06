@@ -18,7 +18,7 @@
     <!-- <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
     <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     
-    <script src="mobileapp.js"></script>
+    <script src="js/mobileapp.js"></script>
 </head> 
 <body> 
     <div data-role="page" id="test" data-fullscreen="true">
@@ -28,17 +28,32 @@
         </div><!-- /header -->
     
         <div data-role="content">     
-            <h2>Welcome</h2>
-            <p>This is the sample of how a mobile site would work for NSA </p>    
-            <h3>Details:</h3>
-            <a href="#page1" data-role="button">1 - Nails and Nailing</a>
-            <a href="#page2" data-role="button">2 - Headlap and Exposure</a>
-            <a href="#page3" data-role="button">3 - Offset</a>
-            <a href="#page4" data-role="button">4 - Slate Repair Nail and Bib</a>
-            <a href="#page5" data-role="button">5 - Slate Repair Slate Hook</a>
-            <a href="#page6" data-role="button">6 - Eave Edge</a>
-            <a href="#page7" data-role="button">7 - Headwall Flashing</a>
-            <a href="#page8" data-role="button">8 - Apron Corner</a>
+            <h2>Welcome to NSA Mobile</h2>
+            <p>A field tool for contractors and architects, this mobile guide is a quick reference to information published in NSA's <strong>Slate Roofs Design and Installation Manual</strong>.</p>    
+            <h3>Please select an option::</h3>
+            <a href="#roof_installation" data-role="button">Roof Installation Techniques</a>
+            <a href="http://nsaslate.com/" data-role="button">Full NSA Website</a>
+
+        </div><!-- /content -->
+
+    </div>
+    <div data-role="page" id="roof_installation" data-fullscreen="true">
+
+        <div data-role="header">
+            <img border="0" src="img/header.png" alt="Logo, Facebook" style="display:inline"/> 
+        </div><!-- /header -->
+    
+        <div data-role="content">     
+            <h2>NSA Field Guide Installation Topics</h2>
+            <h3>Please select an option below:</h3>
+            <a href="#page1" data-role="button">Nails and Nailing</a>
+            <a href="#page2" data-role="button">Headlap and Exposure</a>
+            <a href="#page3" data-role="button">Offset </a>
+            <a href="#page4" data-role="button">Slate Repair Nail and Bib</a>
+            <a href="#page5" data-role="button">Slate Repair Slate Hook</a>
+            <a href="#page6" data-role="button">Eave Edge</a>
+            <a href="#page7" data-role="button">Headwall Flashing</a>
+            <a href="#page8" data-role="button">Apron Corner</a>
 
         </div><!-- /content -->
 
@@ -56,13 +71,13 @@
         <h1>Nails and Nailing</h1> 
     </div><!-- /header -->
     
-    <div data-role="content">    
-        <h1>Introduction</h1>
-        <p>This is an introduction paragraph</p>
+    <div data-role="content">
+        <p>Hundreds of years of experience has shown that the method fastening the slate can make a signifi- cant difference in the reliability and longevity of the roof. We offer several suggestions here.</p>
+<h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="details1.html">Details</a></li>
-            <li><a href="#image1">Image Zoom</a></li>
+            <li><a href="details1.html">Nailing Techinque Details</a></li>
+            <li><a href="#image1">Illustrations and Drawings</a></li>
         </ul>
 
     </div><!-- /content -->
@@ -72,7 +87,7 @@
 <div data-role="page" id="image1" class="image_wrap" data-fullscreen="true">
 
     <div data-role="header">
-        <a href="#page1" data-icon="back">back</a>
+        <a href="#page1" data-icon="back">Back&nbsp;&nbsp;&nbsp;</a>
         <h1>Nails and Nailing</h1>
         <a href="details1.html" data-rel="dialog" data-icon="bars">Details</a>
     </div><!-- /header -->
@@ -112,7 +127,7 @@
     </div><!-- /content -->
 </div>
 
-<div data-role="page" id="image2" class="image_wrap" data-fullscreen="true">
+<div data-role="page" id="image2" class="image_wrap" data-fullscreen="true" >
 
     <div data-role="header">
         <a href="#page1" data-icon="back">back</a>
@@ -128,6 +143,50 @@
     
     <div data-role="footer">
         <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3a"  />
+    </div><!-- /footer -->
+
+</div>
+
+<!--
+||
+||  Nails and Nailing
+||
+-->
+<div data-role="page" id="page3" data-fullscreen="true">
+
+    <div data-role="header">
+        <a href="index.html" data-icon="home">Home</a>
+        <h1>Offset</h1>
+    </div><!-- /header -->
+    
+    <div data-role="content">    
+        <h1>Introduction</h1>
+        <p>This is an introduction paragraph</p>
+
+        <ul data-role="listview" data-inset="true">
+            <li><a href="details3.html">Details</a></li>
+            <li><a href="#image3">Image Zoom</a></li>
+        </ul>
+
+    </div><!-- /content -->
+</div>
+
+<div data-role="page" id="image3" class="image_wrap" data-fullscreen="true">
+
+    <div data-role="header">
+        <a href="#page3" data-icon="back">back</a>
+        <h1>Offset</h1>
+        <a href="details3.html" data-rel="dialog" data-icon="bars">Details</a>
+    </div><!-- /header -->
+
+    <div data-role="content">    
+        
+        <img class="zoom" src="img/3b/1.gif" width="2475" height="1957">
+
+    </div><!-- /content -->
+    
+    <div data-role="footer">
+        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3b"  />
     </div><!-- /footer -->
 
 </div>
