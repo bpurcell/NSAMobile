@@ -1,26 +1,4 @@
-
-<!DOCTYPE html> 
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-    <title>NSA</title> 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-
-    <link rel="stylesheet" href="nsa1.3.css" />
-    <link rel="stylesheet" href="jquery.touchpanview.css" />
-    <link rel="stylesheet" href="additional.css" />
-    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/jquery.jgestures.js"></script>
-    <script src="js/jquery.touchpanview.js"></script>
-    <!-- <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
-    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-    
-    <script src="js/mobileapp.js"></script>
-</head> 
-<body> 
+<?php include 'partials/header.php'; ?>
     <div data-role="page" id="test" data-fullscreen="true">
 
         <div data-role="header">
@@ -46,14 +24,11 @@
         <div data-role="content">     
             <h2>NSA Field Guide Installation Topics</h2>
             <h3>Please select an option below:</h3>
-            <a href="#page1" data-role="button">Nails and Nailing</a>
-            <a href="#page2" data-role="button">Headlap and Exposure</a>
-            <a href="#page3" data-role="button">Offset </a>
-            <a href="#page4" data-role="button">Slate Repair Nail and Bib</a>
-            <a href="#page5" data-role="button">Slate Repair Slate Hook</a>
-            <a href="#page6" data-role="button">Eave Edge</a>
-            <a href="#page7" data-role="button">Headwall Flashing</a>
-            <a href="#page8" data-role="button">Apron Corner</a>
+            <a href="#nails" data-role="button">Nails and Nailing</a>
+            <a href="#headlap" data-role="button">TBD</a>
+            <a href="#repair" data-role="button">Slate Repair</a>
+            <a href="#eave" data-role="button">Eave Edge</a>
+            <a href="#headwall" data-role="button">TBD</a>
 
         </div><!-- /content -->
 
