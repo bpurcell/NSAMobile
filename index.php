@@ -25,10 +25,10 @@
             <h2>NSA Field Guide Installation Topics</h2>
             <h3>Please select an option below:</h3>
             <a href="#nails" data-role="button">Nails and Nailing</a>
-            <a href="#headlap" data-role="button">TBD</a>
+            <a href="#headlap" data-role="button">headlap</a>
             <a href="#repair" data-role="button">Slate Repair</a>
             <a href="#eave" data-role="button">Eave Edge</a>
-            <a href="#headwall" data-role="button">TBD</a>
+            <a href="#headwall" data-role="button">headwall</a>
 
         </div><!-- /content -->
 
@@ -37,6 +37,8 @@
 <?php include 'partials/nails.php'; ?>
 <?php include 'partials/headlap.php'; ?>
 <?php include 'partials/repair.php'; ?>
+<?php include 'partials/eave.php'; ?>
+<?php include 'partials/headwall.php'; ?>
 
 </body>
 </html>
