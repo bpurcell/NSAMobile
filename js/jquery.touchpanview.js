@@ -151,7 +151,7 @@ function log( txt ) { $('#log').append('<li>'+txt+'</li>'); }
 				var safe_repeater = cfg.easingRepeat;
 				var easing = function() {
 					
-					// Calcolo movimento in base a velocitˆ.
+					// Calcolo movimento in base a velocitË†.
 					css = $pan.position();
 					
 					if ( Math.abs(speedX) >= 0.01 ) {

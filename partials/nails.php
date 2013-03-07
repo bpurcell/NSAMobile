@@ -1,7 +1,7 @@
 <div data-role="page" id="nails" data-fullscreen="true">
 
     <div data-role="header">
-        <a href="index.html" data-icon="home">Home</a>
+        <a href="#home" data-icon="home">Home</a>
         <h1>Nails and Nailing</h1> 
     </div><!-- /header -->
     
@@ -20,11 +20,11 @@
 
 <div data-role="page" id="nails_image" class="image_wrap" data-fullscreen="true">
     <div data-role="header">
-        <h1>Headlap and Exposure</h1>
+        <h1>Nails and Nailing</h1>
     </div><!-- /header -->
     <div data-role="content">
         <img class="zoom" src="img/nails/1.gif" width="2475" height="1957">
-    </div><!-- /content -->
+    </div><!-- /content --> 
     <div data-role="footer">
         <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="nails"  />
         <div data-role="navbar"  data-iconpos="left">
