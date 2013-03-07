@@ -6,7 +6,7 @@
     </div><!-- /header -->
     
     <div data-role="content">
-        <p>Hundreds of years of experience has shown that the method fastening the slate can make a signifi- cant difference in the reliability and longevity of the roof. We offer several suggestions here.</p>
+        <h2>NSA Field Guild Installation Topic: Nails and Nailing</h2>
 <h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
