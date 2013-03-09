@@ -11,31 +11,14 @@
 
         <ul data-role="listview" data-inset="true">
             <li><a href="#bib_detail">Nail and Bib Details</a></li>
-            <li><a href="#bib_image">Nail and Bib Drawings</a></li>
+            <li><a href="bib_image.html" rel="external" data-ajax="false">Nail and Bib Drawings</a></li>
             <li><a href="#hook_detail">Slate Hook Details</a></li>
-            <li><a href="#hook_image">Slate Hook Drawings</a></li>
+            <li><a href="hook_image.html" rel="external" data-ajax="false">Slate Hook Drawings</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="bib_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Nail and Bib</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/5a/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="7" data-folder="5a"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#bib_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="bib_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -80,24 +63,7 @@
     </div>
 </div>
 
-<div data-role="page" id="hook_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Slate Hook</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/5b/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="6" data-folder="5b"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#hook_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="hook_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>

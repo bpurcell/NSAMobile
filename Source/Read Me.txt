@@ -1,0 +1,7 @@
+- To implement this plugin on your webpage, just use the set of files included in the Folder "Example". 
+
+- The Example folder uses minified version of the source js file.
+
+-----x-----
+
+ 

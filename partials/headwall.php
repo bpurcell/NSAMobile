@@ -10,32 +10,15 @@
 <h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="#headwall_detail">Headwall Flashing  Details</a></li>
-            <li><a href="#headwall_image">Headwall Flashing  Drawings</a></li>
-            <li><a href="#apron_detail">Apron Corner Details</a></li>
-            <li><a href="#apron_image">Apron Corner Drawings</a></li>
+            <li><a href="index.html#headwall_detail">Headwall Flashing  Details</a></li>
+            <li><a href="headwall_image.html" rel="external" data-ajax="false">Headwall Flashing  Drawings</a></li>
+            <li><a href="index.html#apron_detail">Apron Corner Details</a></li>
+            <li><a href="apron_image.html" rel="external" data-ajax="false">Apron Corner Drawings</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="headwall_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Headwall Flashing</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/21a/1.gif" width="2300" height="2655">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="7" data-folder="21a"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#headwall_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="headwall_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -69,24 +52,6 @@
     </div>
 </div>
 
-<div data-role="page" id="apron_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Apron Corner</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/21b/1.gif" width="2302" height="1975">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="6" data-folder="21b"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#apron_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
 <div data-role="page" id="apron_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>

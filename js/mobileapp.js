@@ -5,14 +5,13 @@
         $('.image-wrapper').height(h);
 
         jQuery(function($){
-            $('.image_wrap .image-wrapper').smoothZoom({
+            $('.image_wrap .zoom').smoothZoom({
                 width: w,
                 height: h,
                 responsive: false
 
             });
         });
-        
         
         $(".image_wrap .slider").change(function() {
             sVal = $(this).val();

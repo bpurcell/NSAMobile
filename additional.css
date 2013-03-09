@@ -1,3 +1,12 @@
 .image_wrap .ui-content {
     padding:0px;
 }
+
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+	}
+div#preloader img {
+	display: block;
+	}

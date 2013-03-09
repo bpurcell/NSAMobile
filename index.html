@@ -9,29 +9,95 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
 
     <link rel="stylesheet" href="nsa1.3.css" />
-    <link rel="stylesheet" href="jquery.touchpanview.css" />
     <link rel="stylesheet" href="additional.css" />
+
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/jquery.jgestures.js"></script>
-    <script src="js/jquery.touchpanview.js"></script>
-    <!-- <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>-->
+    <script src="Source/jquery.smoothZoom.js"></script>
+
     <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     
     <script src="js/mobileapp.js"></script>
 </head> 
-<body>     <div data-role="page" id="splash" data-fullscreen="true">
+<body> 
+<div id="preloader" style="display:none">
+    <img src="img/1_1.jpg" width="1" height="1" />
+    <img src="img/1_2.jpg" width="1" height="1" />
+    <img src="img/1_3.jpg" width="1" height="1" />
+    <img src="img/1_4.jpg" width="1" height="1" />
+    <img src="img/1_5.jpg" width="1" height="1" />
+    <img src="img/1_6.jpg" width="1" height="1" />
+    <img src="img/1_7.jpg" width="1" height="1" />
+    <img src="img/1_8.jpg" width="1" height="1" />
+    <img src="img/1_9.jpg" width="1" height="1" />
+    <img src="img/1_10.jpg" width="1" height="1" />
+    <img src="img/1_11.jpg" width="1" height="1" />
+    <img src="img/1_12.jpg" width="1" height="1" />
+    <img src="img/1_13.jpg" width="1" height="1" />
+    <img src="img/1_14.jpg" width="1" height="1" />
+    <img src="img/3a_1.jpg" width="1" height="1" />
+    <img src="img/3a_2.jpg" width="1" height="1" />
+    <img src="img/3a_3.jpg" width="1" height="1" />
+    <img src="img/3a_4.jpg" width="1" height="1" />
+    <img src="img/3a_5.jpg" width="1" height="1" />
+    <img src="img/3b_1.jpg" width="1" height="1" />
+    <img src="img/3b_2.jpg" width="1" height="1" />
+    <img src="img/3b_3.jpg" width="1" height="1" />
+    <img src="img/3b_4.jpg" width="1" height="1" />
+    <img src="img/3b_5.jpg" width="1" height="1" />
+    <img src="img/3b_6.jpg" width="1" height="1" />
+    <img src="img/5a_1.jpg" width="1" height="1" />
+    <img src="img/5a_2.jpg" width="1" height="1" />
+    <img src="img/5a_3.jpg" width="1" height="1" />
+    <img src="img/5a_4.jpg" width="1" height="1" />
+    <img src="img/5a_5.jpg" width="1" height="1" />
+    <img src="img/5a_6.jpg" width="1" height="1" />
+    <img src="img/5a_7.jpg" width="1" height="1" />
+    <img src="img/5b_1.jpg" width="1" height="1" />
+    <img src="img/5b_2.jpg" width="1" height="1" />
+    <img src="img/5b_3.jpg" width="1" height="1" />
+    <img src="img/5b_4.jpg" width="1" height="1" />
+    <img src="img/5b_5.jpg" width="1" height="1" />
+    <img src="img/5b_6.jpg" width="1" height="1" />
+    <img src="img/9_1.jpg" width="1" height="1" />
+    <img src="img/9_2.jpg" width="1" height="1" />
+    <img src="img/9_3.jpg" width="1" height="1" />
+    <img src="img/9_4.jpg" width="1" height="1" />
+    <img src="img/9_5.jpg" width="1" height="1" />
+    <img src="img/9_6.jpg" width="1" height="1" />
+    <img src="img/9_7.jpg" width="1" height="1" />
+    <img src="img/21a_1.jpg" width="1" height="1" />
+    <img src="img/21a_2.jpg" width="1" height="1" />
+    <img src="img/21a_3.jpg" width="1" height="1" />
+    <img src="img/21a_4.jpg" width="1" height="1" />
+    <img src="img/21a_5.jpg" width="1" height="1" />
+    <img src="img/21a_6.jpg" width="1" height="1" />
+    <img src="img/21a_7.jpg" width="1" height="1" />
+    <img src="img/21b_1.jpg" width="1" height="1" />
+    <img src="img/21b_2.jpg" width="1" height="1" />
+    <img src="img/21b_3.jpg" width="1" height="1" />
+    <img src="img/21b_4.jpg" width="1" height="1" />
+    <img src="img/21b_5.jpg" width="1" height="1" />
+    <img src="img/21b_6.jpg" width="1" height="1" />
+    <img src="img/21b_7.jpg" width="1" height="1" />
+    <img src="img/21b_8.jpg" width="1" height="1" />
+    <img src="img/21b_9.jpg" width="1" height="1" />
+    <img src="img/21b_10.jpg" width="1" height="1" />
+    
+</div>
+
+
+    <div data-role="page" id="splash" data-fullscreen="true">
 
         <div data-role="header">
-            <img border="0" src="img/header.png" alt="Logo, Facebook" style="display:inline"/> 
+            <img border="0" src="images/header.png" alt="Logo, Facebook" style="display:inline"/> 
         </div><!-- /header -->
     
         <div data-role="content">     
             <h2>Welcome to NSA Mobile</h2>
             <p>A field tool for contractors and architects, this mobile guide is a quick reference to information published in NSA's <strong>Slate Roofs Design and Installation Manual</strong>.</p>    
-            <h3>Please select an option::</h3>
+            <h3>Please select an option:</h3>
             <a href="#home" data-role="button">Roof Installation Techniques</a>
-            <a href="http://nsaslate.com/" data-role="button">Full NSA Website</a>
+            <a href="http://slateassociation.org/" data-role="button">Full NSA Website</a>
 
         </div><!-- /content -->
 
@@ -39,17 +105,17 @@
     <div data-role="page" id="home" data-fullscreen="true">
 
         <div data-role="header">
-            <img border="0" src="img/header.png" alt="Logo, Facebook" style="display:inline"/> 
+            <img border="0" src="images/header.png" alt="Logo, Facebook" style="display:inline"/> 
         </div><!-- /header -->
     
         <div data-role="content">     
             <h2>NSA Field Guide Installation Topics</h2>
             <h3>Please select an option below:</h3>
             <a href="#nails" data-role="button">Nails and Nailing</a>
-            <a href="#headlap" data-role="button">headlap</a>
+            <a href="#headlap" data-role="button">Headlap</a>
             <a href="#repair" data-role="button">Slate Repair</a>
             <a href="#eave" data-role="button">Eave Edge</a>
-            <a href="#headwall" data-role="button">headwall</a>
+            <a href="#headwall" data-role="button">Headwall</a>
 
         </div><!-- /content -->
 
@@ -63,35 +129,16 @@
     </div><!-- /header -->
     
     <div data-role="content">
-        <p>Hundreds of years of experience has shown that the method fastening the slate can make a signifi- cant difference in the reliability and longevity of the roof. We offer several suggestions here.</p>
+        <h2>NSA Field Guild Installation Topic: Nails and Nailing</h2>
 <h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
             <li><a href="#nails_detail">Details</a></li>
-            <li><a href="#nails_image">Drawings</a></li>
+            <li><a href="nails_image.html" rel="external" data-ajax="false">Drawings</a></li>
         </ul>
 
     </div><!-- /content -->
 
-</div>
-
-<div data-role="page" id="nails_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Nails and Nailing</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/nails/1.gif" width="2475" height="1957">
-    </div><!-- /content --> 
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="nails"  />
-        <div data-role="navbar"  data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="headlap_details.html" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div><!-- /navbar -->
-    </div><!-- /footer -->
 </div>
 
 <div data-role="page" id="nails_detail">
@@ -125,32 +172,15 @@
 <h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="#headlap_detail">Headlap and Exposure Details</a></li>
-            <li><a href="#headlap_image">Headlap and Exposure Drawings</a></li>
-            <li><a href="#offset_detail">Offset Details</a></li>
-            <li><a href="#offset_image">Offset Drawings</a></li>
+            <li><a href="index.php#headlap_detail">Headlap and Exposure Details</a></li>
+            <li><a href="headlap_image.html" rel="external" data-ajax="false">Headlap and Exposure Drawings</a></li>
+            <li><a href="index.php#offset_detail">Offset Details</a></li>
+            <li><a href="offset_image.html" rel="external" data-ajax="false">Offset Drawings</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="headlap_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Headlap and Exposure</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/3a/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3a"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#headlap_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="headlap_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -169,24 +199,7 @@
     </div>
 </div>
 
-<div data-role="page" id="offset_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Offset</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/3b/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3b"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#offset_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="offset_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -216,31 +229,14 @@
 
         <ul data-role="listview" data-inset="true">
             <li><a href="#bib_detail">Nail and Bib Details</a></li>
-            <li><a href="#bib_image">Nail and Bib Drawings</a></li>
+            <li><a href="bib_image.html" rel="external" data-ajax="false">Nail and Bib Drawings</a></li>
             <li><a href="#hook_detail">Slate Hook Details</a></li>
-            <li><a href="#hook_image">Slate Hook Drawings</a></li>
+            <li><a href="hook_image.html" rel="external" data-ajax="false">Slate Hook Drawings</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="bib_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Nail and Bib</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/5a/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="7" data-folder="5a"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#bib_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="bib_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -285,24 +281,7 @@
     </div>
 </div>
 
-<div data-role="page" id="hook_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Slate Hook</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/5b/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="6" data-folder="5b"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#hook_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="hook_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -360,26 +339,8 @@
             <li><a href="#eave3">Metal Drip Edge Detail</a></li>
             <li><a href="#eave4">Eave Underlayment Detail</a></li>
             <li><a href="#eave5">Starter Course Detail</a></li>
-            <li><a href="#eave_image">Eave Edge Drawing</a></li>
+            <li><a href="eave_image.html" rel="external" data-ajax="false">Eave Edge Drawing</a></li>
         </ul>
-    </div>
-</div>
-
-<div data-role="page" id="eave_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Nail and Bib</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/9/1.gif" width="2304" height="1874">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="7" data-folder="9"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-              </ul>
-          </div>
     </div>
 </div>
 
@@ -534,32 +495,15 @@
 <h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="#headwall_detail">Headwall Flashing  Details</a></li>
-            <li><a href="#headwall_image">Headwall Flashing  Drawings</a></li>
-            <li><a href="#apron_detail">Apron Corner Details</a></li>
-            <li><a href="#apron_image">Apron Corner Drawings</a></li>
+            <li><a href="index.html#headwall_detail">Headwall Flashing  Details</a></li>
+            <li><a href="headwall_image.html" rel="external" data-ajax="false">Headwall Flashing  Drawings</a></li>
+            <li><a href="index.html#apron_detail">Apron Corner Details</a></li>
+            <li><a href="apron_image.html" rel="external" data-ajax="false">Apron Corner Drawings</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="headwall_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Headwall Flashing</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/21a/1.gif" width="2300" height="2655">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="7" data-folder="21a"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#headwall_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="headwall_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -593,24 +537,6 @@
     </div>
 </div>
 
-<div data-role="page" id="apron_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Apron Corner</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/21b/1.gif" width="2302" height="1975">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="6" data-folder="21b"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#apron_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
 <div data-role="page" id="apron_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>

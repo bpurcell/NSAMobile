@@ -10,34 +10,15 @@
 <h3>Please select:</h3>
 
         <ul data-role="listview" data-inset="true">
-            <li><a href="#headlap_detail">Headlap and Exposure Details</a></li>
-            <li><a href="#headlap_image">Headlap and Exposure Drawings</a></li>
-            <li><a href="#offset_detail">Offset Details</a></li>
-            <li><a href="#offset_image">Offset Drawings</a></li>
+            <li><a href="index.php#headlap_detail">Headlap and Exposure Details</a></li>
+            <li><a href="headlap_image.html" rel="external" data-ajax="false">Headlap and Exposure Drawings</a></li>
+            <li><a href="index.php#offset_detail">Offset Details</a></li>
+            <li><a href="offset_image.html" rel="external" data-ajax="false">Offset Drawings</a></li>
         </ul>
     </div>
 </div>
 
-<div data-role="page" id="headlap_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Headlap and Exposure</h1>
-    </div><!-- /header -->
-    <div data-role="content" style="height:400px">
-        
-        <img class="zoom" src="img/3a/1.gif" id="image_test">
-        
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3a"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#headlap_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="headlap_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>
@@ -56,24 +37,7 @@
     </div>
 </div>
 
-<div data-role="page" id="offset_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Offset</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/3b/1.gif" width="2475" height="1957">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3b"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-                  <li><a href="#offset_detail" data-rel="dialog" data-icon="bars">Details</a></li>
-              </ul>
-          </div>
-    </div>
-</div>
+
 <div data-role="page" id="offset_detail">
     <div data-role="header">
         <a href="" data-icon="back" data-rel="back">Back</a>

@@ -15,26 +15,8 @@
             <li><a href="#eave3">Metal Drip Edge Detail</a></li>
             <li><a href="#eave4">Eave Underlayment Detail</a></li>
             <li><a href="#eave5">Starter Course Detail</a></li>
-            <li><a href="#eave_image">Eave Edge Drawing</a></li>
+            <li><a href="eave_image.html" rel="external" data-ajax="false">Eave Edge Drawing</a></li>
         </ul>
-    </div>
-</div>
-
-<div data-role="page" id="eave_image" class="image_wrap" data-fullscreen="true">
-    <div data-role="header">
-        <h1>Nail and Bib</h1>
-    </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/9/1.gif" width="2304" height="1874">
-    </div>
-    <div data-role="footer">
-        <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="7" data-folder="9"  />
-        <div data-role="navbar" data-iconpos="left">
-              <ul>
-                  <li><a href="" data-icon="back" data-rel="back">Back</a></li>
-                  <li><a href="#home" data-icon="home">Home</a></li>
-              </ul>
-          </div>
     </div>
 </div>
 
