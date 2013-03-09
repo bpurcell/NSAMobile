@@ -21,7 +21,7 @@
             sVal = $(this).val();
             folder = $(this).data('folder');
             
-            $('.zoom').attr('src','img/'+folder+'/'+sVal+'.gif');
+            $('.zoom').attr('src','img/'+folder+'_'+sVal+'.jpg');
         });
         
         
