@@ -22,8 +22,10 @@
     <div data-role="header">
         <h1>Headlap and Exposure</h1>
     </div><!-- /header -->
-    <div data-role="content">
-        <img class="zoom" src="img/3a/1.gif" width="2475" height="1957">
+    <div data-role="content" style="height:400px">
+        
+        <img class="zoom" src="img/3a/1.gif" id="image_test">
+        
     </div>
     <div data-role="footer">
         <input type="range" name="slider" id="slider" class="slider" value="1" min="1" max="5" data-folder="3a"  />
