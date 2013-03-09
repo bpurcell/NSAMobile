@@ -5,13 +5,10 @@
         $('.image-wrapper').height(h);
 
         jQuery(function($){
-            $('.image_wrap .zoom').smoothZoom({
+            $('.image_wrap .image-wrapper').smoothZoom({
                 width: w,
                 height: h,
-                responsive: true,
-                zoom_BUTTONS_SHOW : 'NO',
-                pan_BUTTONS_SHOW : 'NO',
-                pan_LIMIT_BOUNDARY : 'NO'
+                responsive: false
 
             });
         });
