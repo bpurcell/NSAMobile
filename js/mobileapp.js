@@ -16,6 +16,10 @@
             });
         });
         
+        $(".information").click(function() {
+          $('.information').hide();
+        });
+        
         $(".image_wrap .slider").change(function() {
             $('.information').hide();
             sVal = $(this).val();
