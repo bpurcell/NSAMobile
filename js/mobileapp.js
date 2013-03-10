@@ -1,6 +1,6 @@
     $(document).live('pageinit',function(event){
         
-        var h = $(window).height()-64;
+        var h = $(window).height()-40;
         var w = $(window).width();
         $('.image-wrapper').height(h);
 
