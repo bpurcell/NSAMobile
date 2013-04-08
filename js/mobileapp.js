@@ -20,16 +20,29 @@
           $('.information').hide();
         });
         
-        $(".image_wrap .slider").change(function() {
+        $(".image_nav .back").hide();
+
+        $(".image_nav .nav_arrows").click(function() {
+
             $('.information').hide();
-            sVal = $(this).val();
-            folder = $(this).data('folder');
             
-            $('.zoom').attr('src','img/'+folder+'_'+sVal+'.jpg');
+            var data = $(this).parent().data();
+            var dir = (($(this).hasClass('forward')) ? 1 : -1);
+            if(data.current > 1) $(".image_nav .back").show();
+            
+            $(this).parent().data('current', data.current+dir);
+            
+            $('.nav_count').html('Image ' + data.current+dir + ' of ' + data.total);
+            
+            $('.zoom').attr('src','img/'+data.folder+'_'+(data.current+dir)+'.jpg');
         });
-        
+
         
     });
+    
+    
+    
+    
     $(document).bind("orientationchange", function(e){  
         $.mobile.changePage(
           window.location.href,
