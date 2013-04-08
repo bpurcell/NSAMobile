@@ -16,7 +16,7 @@
             });
         });
         
-        $(".information").click(function() {
+        $(".zoom, .information").click(function() {
           $('.information').hide();
         });
         
@@ -30,3 +30,16 @@
         
         
     });
+    $(document).bind("orientationchange", function(e){  
+        $.mobile.changePage(
+          window.location.href,
+          {
+            allowSamePageTransition : true,
+            transition              : 'none',
+            showLoadMsg             : false,
+            reloadPage              : true
+          }
+        );
+
+        $('.information').hide();
+    }); 

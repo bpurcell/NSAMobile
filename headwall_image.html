@@ -3,7 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- standard viewport tag to set the viewport to the device's width
+      , Android 2.3 devices need this so 100% width works properly and
+      doesn't allow children to blow up the viewport width-->
+    <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <!-- width=device-width causes the iPhone 5 to letterbox the app, so
+      we want to exclude it for iPhone 5 to allow full screen apps -->
+    <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>NSA</title> 
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
