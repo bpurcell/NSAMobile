@@ -32,7 +32,7 @@
             
             $(this).parent().data('current', data.current+dir);
             
-            $('.nav_count').html('Image ' + data.current+dir + ' of ' + data.total);
+            $('.nav_count').html('Image ' + (data.current) + ' of ' + data.total);
             
             $('.zoom').attr('src','img/'+data.folder+'_'+(data.current+dir)+'.jpg');
         });
