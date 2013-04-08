@@ -29,10 +29,12 @@
             var data = $(this).parent().data();
             var dir = (($(this).hasClass('forward')) ? 1 : -1);
             if(data.current > 1) $(".image_nav .back").show();
+
+            if(data.current == data.count) $(".image_nav .forward").hide();
             
             $(this).parent().data('current', data.current+dir);
             
-            $('.nav_count').html('Image ' + (data.current) + ' of ' + data.total);
+            $('.nav_count').html('Image ' + (data.current -1) + ' of ' + data.total);
             
             $('.zoom').attr('src','img/'+data.folder+'_'+(data.current+dir)+'.jpg');
         });

@@ -17,21 +17,32 @@ div.information {
         background: rgba(255,255,255,.6);
         z-index: 9999;
 }
-
-.image_nav .nav_arrows, .image_nav .nav_count {
+.image_nav .nav_count {
 position: absolute;
 font-size: 50px;
-z-index: 99999;
+z-index: 5000;
+font-weight: bold;
+padding: 10px;
+color: #cbcaca;
+
+    z-index: 1000;
+}
+.image_nav .nav_arrows {
+position: absolute;
+font-size: 50px;
+z-index: 5000;
 font-weight: bold;
 padding: 10px;
 color: #cbcaca;
 }
 .image_nav .back {
     left:0px;
+    cursor:pointer;
 }
 
 .image_nav .forward {
     right:0px;
+    cursor:pointer;
 }
 .image_nav .nav_count {
 font-size: 20px;
